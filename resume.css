@@ -1,79 +1,87 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #333232;
   break-after: page;
 }
-body * {
+
+html {
+  font-size: 14px;
+}
+
+* {
   box-sizing: border-box;
 }
-body .header {
-  background: #2b6fde;
+
+.header {
+  background: #6b6235;
   padding: 0.75rem;
   padding-right: 1rem;
   position: relative;
   display: table;
   width: 100%;
 }
-body .header .row {
+.header .row {
   display: table-row;
 }
-body .header .row * {
+.header .row * {
   display: table-cell;
   vertical-align: middle;
 }
-body .header .row :nth-child(2) {
+.header .row :nth-child(2) {
   text-align: right;
 }
-body .header .row h1 {
+.header .row h1 {
   color: #ffffff;
   font-size: 1.5rem;
 }
-body .header .row h2 {
-  color: #abc8f5;
+.header .row h2 {
+  color: #fff4ce;
   font-size: 1rem;
   font-weight: normal;
 }
-body .header .row h3 {
-  color: #abc8f5;
+.header .row h3 {
+  color: #f5dbab;
   font-size: 0.75rem;
   font-weight: normal;
 }
-body .header::before {
+.header::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  border: 0.75rem solid white;
-  border-left: 0.75rem solid transparent;
-  border-bottom: 0.75rem solid transparent;
+  top: -0.1rem;
+  right: -0.1rem;
+  border: 0.85rem solid white;
+  border-left: 0.85rem solid transparent;
+  border-bottom: 0.85rem solid transparent;
 }
-body .block {
+
+.block {
   padding: 0.25rem 0.75rem 0.5rem 0.5rem;
   margin: 0.5rem 0;
-  background: #ebedf2;
+  background: #f8f9fc;
   position: relative;
-  border-top: 3px solid #2b6fde;
-  border-right: 3px solid #2b6fde;
-  border-left: 0.75rem solid #2b6fde;
+  border-top: 3px solid #6b6235;
+  border-right: 3px solid #6b6235;
+  border-left: 0.75rem solid #6b6235;
+  line-height: 1.25;
 }
-body .block h4, body .block h6, body .block ul {
+.block h4, .block h6, .block ul {
+  font-size: 1rem;
   margin: 0.1rem 0;
 }
-body .block h6 {
-  font-size: 1rem;
+.block h6 {
   font-weight: normal;
-  color: #2b6fde;
+  color: #6b6235;
 }
-body .block::before {
+.block::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  border: 0.75rem solid #2b6fde;
+  border: 0.75rem solid #6b6235;
   border-left: 0.75rem solid transparent;
   border-bottom: 0.75rem solid transparent;
 }
-body .block::after {
+.block::after {
   content: "";
   position: absolute;
   top: -3px;
@@ -83,28 +91,29 @@ body .block::after {
   border-left: 0.85rem solid transparent;
   border-bottom: 0.85rem solid transparent;
 }
-body .block .row * {
+.block .row * {
   display: inline;
 }
-body .block .row .project-name {
+.block .row .project-name {
   font-style: italic;
+  font-weight: 500;
 }
-body .block .row .extra-info {
-  color: #7e8a94;
+.block .row .extra-info {
+  color: #575d61;
   float: right;
 }
-body .block .row .extra-info .info-divider {
+.block .row .extra-info .info-divider {
   color: #bfbfbf;
 }
-body .block .skills {
+.block .skills {
   color: #333232;
   font-weight: 500;
 }
-body .block ul {
+.block ul {
   list-style: none;
   padding-left: 0.5rem;
 }
-body .block ul li::before {
+.block ul li::before {
   content: "> ";
   color: #bfbfbf;
 }
