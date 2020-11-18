@@ -1,5 +1,5 @@
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: Barlow, sans-serif;
   color: #333232;
   break-after: page;
 }
@@ -13,7 +13,7 @@ html {
 }
 
 .header {
-  background: #6b6235;
+  background: #2e2d2c;
   padding: 0.75rem;
   padding-right: 1rem;
   position: relative;
@@ -31,11 +31,11 @@ html {
   text-align: right;
 }
 .header .row h1 {
-  color: #ffffff;
+  color: #eee2d1;
   font-size: 1.5rem;
 }
 .header .row h2 {
-  color: #fff4ce;
+  color: #e2c062;
   font-size: 1rem;
   font-weight: normal;
 }
@@ -56,38 +56,40 @@ html {
 
 .block {
   padding: 0.25rem 0.75rem 0.5rem 0.5rem;
-  margin: 0.5rem 0;
-  background: #f8f9fc;
+  background: #f9feff;
   position: relative;
-  border-top: 3px solid #6b6235;
-  border-right: 3px solid #6b6235;
-  border-left: 0.75rem solid #6b6235;
-  line-height: 1.25;
+  border-top: 3px solid #2e2d2c;
+  border-right: 3px solid #2e2d2c;
+  border-left: 0.75rem solid #2e2d2c;
+  line-height: 1.35;
+}
+.block:last-child {
+  border-bottom: 3px solid #2e2d2c;
 }
 .block h4, .block h6, .block ul {
   font-size: 1rem;
   margin: 0.1rem 0;
 }
 .block h6 {
-  font-weight: normal;
-  color: #6b6235;
+  font-weight: 500;
+  color: #6b5a2c;
 }
 .block::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  border: 0.75rem solid #6b6235;
+  border: 0.75rem solid #2e2d2c;
   border-left: 0.75rem solid transparent;
   border-bottom: 0.75rem solid transparent;
 }
-.block::after {
+.block:not(:first-child)::after {
   content: "";
   position: absolute;
-  top: -3px;
-  right: -3px;
+  top: -6px;
+  right: 0;
   z-index: 2;
-  border: 0.85rem solid white;
+  border: 0.85rem solid #f9feff;
   border-left: 0.85rem solid transparent;
   border-bottom: 0.85rem solid transparent;
 }
@@ -96,14 +98,13 @@ html {
 }
 .block .row .project-name {
   font-style: italic;
-  font-weight: 500;
 }
 .block .row .extra-info {
   color: #575d61;
   float: right;
 }
 .block .row .extra-info .info-divider {
-  color: #bfbfbf;
+  color: #c2c2c2;
 }
 .block .skills {
   color: #333232;
@@ -115,7 +116,7 @@ html {
 }
 .block ul li::before {
   content: "> ";
-  color: #bfbfbf;
+  color: #c2c2c2;
 }
 
 /*# sourceMappingURL=resume.css.map */

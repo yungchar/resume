@@ -1,18 +1,20 @@
-$main-color: #6b6235;
+$main-color: #2e2d2c;
 
-$font-title: #ffffff;
-$font-header-secondary: #fff4ce;
+$font-title: #eee2d1;
+$font-header-secondary: #e2c062;
 $font-header-tertiary: #f5dbab;
 
 $font-main: #333232;
 $font-secondary: #575d61;
-$font-tertiary: #bfbfbf;
+$font-tertiary: #6b5a2c;
 
-$block-bg: #f8f9fc;
+$block-bg: #f9feff;
+$misc-elements: #c2c2c2;
 
 body
 {
-	font-family: 'Barlow', sans-serif;
+	// For the pdf to be highlightable, this font needs to be on the system during pdf creation
+	font-family: Barlow, sans-serif;
 	color: $font-main;
 	
 	break-after: page;
@@ -93,7 +95,6 @@ html
 .block
 {
 	padding: 0.25rem 0.75rem 0.5rem 0.5rem;
-	margin: 0.5rem 0;
 	
 	background: $block-bg;
 	
@@ -102,12 +103,18 @@ html
 	$border-width: 3px;
 	$border-width-before: 0.75rem;
 	$border-width-after: $border-width-before + 0.1rem;
+	$border-width-after-first: $border-width-before - 0.1rem;
 	
 	border-top: $border-width solid $main-color;
 	border-right: $border-width solid $main-color;
 	border-left: $border-width-before solid $main-color;
+
+	&:last-child
+	{
+		border-bottom: $border-width solid $main-color;
+	}
 	
-	line-height: 1.25;
+	line-height: 1.35;
 
 	h4, h6, ul
 	{
@@ -117,8 +124,8 @@ html
 	
 	h6
 	{
-		font-weight: normal;
-		color: $main-color;
+		font-weight: 500;
+		color: $font-tertiary;
 	}
 	
 	&::before
@@ -134,16 +141,16 @@ html
 		border-bottom: $border-width-before solid transparent;
 	}
 	
-	&::after
+	&:not(:first-child)::after
 	{
 		content: '';
 		
 		position: absolute;
-		top: $border-width * -1;
-		right: $border-width * -1;
+		top: $border-width * -2;
+		right: 0;
 		z-index: 2;
 	
-		border: $border-width-after solid white;
+		border: $border-width-after solid $block-bg;
 		border-left: $border-width-after solid transparent;
 		border-bottom: $border-width-after solid transparent;
 	}
@@ -158,7 +165,6 @@ html
 		.project-name
 		{
 			font-style: italic;
-			font-weight: 500;
 		}
 		
 		.extra-info
@@ -168,7 +174,7 @@ html
 			
 			.info-divider
 			{
-				color: $font-tertiary;
+				color: $misc-elements;
 			}
 		}
 	}
@@ -188,7 +194,7 @@ html
 		li::before
 		{
 			content: '> ';
-			color: $font-tertiary;
+			color: $misc-elements;
 		}
 	}
 }
