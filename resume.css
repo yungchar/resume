@@ -16,8 +16,12 @@ html {
 }
 @media screen {
   html {
-    margin: 0 20vw;
     background-color: #c2c2c2;
+  }
+}
+@media screen and (width > 1024px) {
+  html {
+    margin: 0 20vw;
   }
 }
 

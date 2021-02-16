@@ -34,7 +34,10 @@ html
 {
 	@media screen
 	{
-		margin: 0 20vw;
+		@media (width > 1024px)
+		{
+			margin: 0 20vw;
+		}
 		background-color: $doc-bg;
 	}
 
