@@ -4,9 +4,21 @@ body {
   break-after: page;
   margin: 0;
 }
+@media screen {
+  body {
+    padding: 2rem;
+    background-color: white;
+  }
+}
 
 html {
   font-size: 14px;
+}
+@media screen {
+  html {
+    margin: 0 20vw;
+    background-color: #c2c2c2;
+  }
 }
 
 * {

@@ -11,6 +11,8 @@ $font-tertiary: #6b5a2c;
 $block-bg: #f9feff;
 $misc-elements: #c2c2c2;
 
+$doc-bg: #c2c2c2;
+
 body
 {
 	// For the pdf to be highlightable, this font needs to be on the system during pdf creation
@@ -20,10 +22,22 @@ body
 	break-after: page;
 
 	margin: 0;
+
+	@media screen
+	{
+		padding: 2rem;
+		background-color: white;
+	}
 }
 
 html
 {
+	@media screen
+	{
+		margin: 0 20vw;
+		background-color: $doc-bg;
+	}
+
 	font-size: 14px;
 }
 
@@ -89,6 +103,7 @@ html
 		$border-width-before: 0.85rem;
 		
 		border: $border-width-before solid white;
+
 		border-left: $border-width-before solid transparent;
 		border-bottom: $border-width-before solid transparent;
 	}
