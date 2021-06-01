@@ -12,7 +12,7 @@ body {
 }
 
 html {
-  font-size: 14px;
+  font-size: 15px;
 }
 @media screen {
   html {
@@ -78,7 +78,7 @@ html {
   border-top: 3px solid #2e2d2c;
   border-right: 3px solid #2e2d2c;
   border-left: 0.75rem solid #2e2d2c;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 .block:last-child {
   border-bottom: 3px solid #2e2d2c;
@@ -90,6 +90,9 @@ html {
 .block h6 {
   font-weight: bold;
   color: #6b5a2c;
+}
+.block .same-line {
+  display: inline;
 }
 .block::before {
   content: "";

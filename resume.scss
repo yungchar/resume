@@ -41,7 +41,7 @@ html
 		background-color: $doc-bg;
 	}
 
-	font-size: 14px;
+	font-size: 15px;
 }
 
 *
@@ -134,7 +134,7 @@ html
 		border-bottom: $border-width solid $main-color;
 	}
 	
-	line-height: 1.35;
+	line-height: 1.4;
 
 	h4, h6, ul
 	{
@@ -146,6 +146,10 @@ html
 	{
 		font-weight: bold;
 		color: $font-tertiary;
+	}
+
+	.same-line {
+		display: inline;
 	}
 	
 	&::before
