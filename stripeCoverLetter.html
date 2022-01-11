@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="resume.css"/>
+	</head>
+	<body>
+		<div class="header">
+		
+			<div class="row">
+				<h1>Charmaine Yung</h1>
+				<h2>charmaine.yung@mail.utoronto.ca</h2>
+			</div>
+			
+			<div class="row">
+				<h2>github.com/charyung</h2>
+				<h2>linkedin.com/in/charyung/</h2>
+			</div>
+			
+		</div>
+		<div class="content">
+            <div class="block">
+                <p>
+                    Hello,
+                </p>
+
+                <p>
+                    One of the things that really attracted me to Stripe was that I knew since the company works with payment, it would no doubt have security teams with really smart and talented people who I would seriously love to work with and learn from. I mean, when your head of security is the legendary Niels Provos (shout outs for his fantastic bcrypt!), it really shows how serious security is to the company. I wanted to show how serious security is to me too, but I didn't want to flood the textboxes on the actual form with too much text. So, I thought I should write a cover letter detailing things I've done relating to cybersecurity that can't really be expressed through the resume.
+                </p>
+
+                <p>
+                    As you may have seen if you've already read my resume, I've never held a formal cybersecurity role in my past internships before. However, that doesn't mean that I have no experience in it. At my third internship, I had to add a feature for a supervisor to create an account for a new employee because our authentication system didn't have one built in. I wanted to avoid bad practices, like emailing the password or getting the supervisor create the password for the employee. Therefore, I decided to create a system that forces password reset upon first login, and a random temporary password would hold its place before then. The main task was to generate this placeholder. I made sure to follow best practices, such as using a cryptographically secure RNG, plus salting and hashing it with a reliable library before storing it. This is the kind of thought that I put into everything I make because I know that a secure system is important both for the users and the company.
+                </p>
+
+                <p>
+                    At my fourth internship, I didn't have an opportunity to implement something this significant, but I still kept security in mind for everything I did. When I implemented a form that takes user input, I made sure that such input is validated and sanitized at each of the frontend, GraphQL, and backend levels. 
+                    At this same internship, the security team ran a competition on <a href="https://www.securecodewarrior.com/">Secure Code Warriors</a>, at which I won first place. In this competition, I demonstrated knowledge of various types of common vulnerabilities in code, such as the OWASP Top 10. I know that a lot of the security teams at Stripe work on doing code review on other people's code to look for potential security flaws, wherein I could use the same knowledge I've had to use in the competition.
+                </p>
+
+                <p>
+                    Finally, in the network and computer security course I'm taking this semester (you can take a look at the course material <a href="https://thierrysans.me/CSCD27/">here</a>), We've covered a variety of topics within the field, and I've had the chance to really learn those concepts with capture the flag challenges. For example, I've had to make a simplified version of TLS 1.3 and use it to send some secured messages between a client and a server. I learned to use the Diffie-Hellman protocol to exchange the keys, AES for encryption of the messages, and RSA to certify each message. I've done attacks using Wireshark to exploit various vulnerabilities on the web, such as with SSL stripping with a site that has mixed content. I've also done pentesting exercises using various common tools such as nmap, OpenVAS, and Metasploit. Through this course, I gained practical knowledge that's sure to be useful at every security related role.
+                </p>
+
+                <p>
+                    If you've made it this far, thank you for reading! I hope my passion for security has come across clearly, and I hope that I get a chance to use this passion to do truly great work at Stripe.
+                </p>
+
+
+                <p>
+                    Sincerely, <br />
+                    Charmaine Yung
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
