@@ -1,0 +1,53 @@
+body {
+  color: #333232;
+  break-after: page;
+  margin: 0;
+}
+@media screen {
+  body {
+    padding: 2rem;
+    background-color: white;
+  }
+}
+
+html {
+  font-size: 15px;
+}
+@media screen {
+  html {
+    background-color: #c2c2c2;
+  }
+}
+@media screen and (width > 1024px) {
+  html {
+    margin: 0 20vw;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header .row {
+  display: table-row;
+}
+.header::before {
+  content: "";
+}
+
+.block .same-line {
+  display: inline;
+}
+.block .row * {
+  display: inline;
+}
+.block ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+.block ul li::before {
+  content: " ";
+  color: #c2c2c2;
+}
+
+/*# sourceMappingURL=resume.css.map */

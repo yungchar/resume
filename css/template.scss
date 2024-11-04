@@ -1,0 +1,108 @@
+$main-color: #2e2d2c;
+
+$font-title: #eee2d1;
+$font-header-secondary: #e2c062;
+$font-header-tertiary: #f5dbab;
+
+$font-main: #333232;
+$font-secondary: #575d61;
+$font-tertiary: #6b5a2c;
+
+$block-bg: #f9feff;
+$misc-elements: #c2c2c2;
+
+$doc-bg: #c2c2c2;
+
+body
+{
+	// For the pdf to be highlightable, this font needs to be on the system during pdf creation
+	color: $font-main;
+	
+	break-after: page;
+
+	margin: 0;
+
+	@media screen
+	{
+		padding: 2rem;
+		background-color: white;
+	}
+}
+
+html
+{
+	@media screen
+	{
+		@media (width > 1024px)
+		{
+			margin: 0 20vw;
+		}
+		background-color: $doc-bg;
+	}
+
+	font-size: 15px;
+}
+
+*
+{
+	box-sizing: border-box;
+}
+
+.header
+{
+	
+	.row
+	{
+		display: table-row;
+	}
+	
+	&::before
+	{
+		content: '';
+	}
+}
+
+.block
+{
+
+	.same-line {
+		display: inline;
+	}
+	
+	.row
+	{
+		*
+		{
+			display: inline;
+		}
+		
+		.project-name
+		{
+		}
+		
+		.extra-info
+		{
+			
+			.info-divider
+			{
+			}
+		}
+	}
+	
+	.skills
+	{
+	}
+	
+	ul
+	{
+		list-style: none;
+		
+		padding-left: 0.5rem;
+		
+		li::before
+		{
+			content: ' ';
+			color: $misc-elements;
+		}
+	}
+}
