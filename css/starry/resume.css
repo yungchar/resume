@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   color: #333232;
   break-after: page;
@@ -29,10 +30,21 @@ html {
 }
 
 .header .row {
-  display: table-row;
+  text-align: center;
+  display: table;
+  width: 100%;
 }
-.header::before {
-  content: "";
+.header .row.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .row.contacts span {
+  margin-right: 1em;
+}
+.header .row.contacts span:not(:first-child)::before {
+  content: "✦";
+  margin-right: 1em;
 }
 
 .block .same-line {
@@ -41,13 +53,15 @@ html {
 .block .row * {
   display: inline;
 }
+.block .row .extra-info .info-divider::before {
+  content: "✦";
+}
 .block ul {
   list-style: none;
   padding-left: 0.5rem;
 }
 .block ul li::before {
-  content: " ";
-  color: #c2c2c2;
+  content: "✦ ";
 }
 
 /*# sourceMappingURL=resume.css.map */
