@@ -100,7 +100,7 @@ html {
 }
 .block ul {
   list-style: none;
-  margin: 5px 0;
+  margin: 3px 0;
   padding-left: 0.5rem;
 }
 .block ul li::before {
